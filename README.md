@@ -1,13 +1,13 @@
 # 2021 edition - Java, Spring Framework, Spring Boot, Spring Cloud, Microservices, IntelliJ, REST, JPA, Maven, Zuul,Ribbon
 
 `Topics covered:`
-Externalized Configuration
-Reading configuration from application.properties (from GIT)
-Reading configuration from application.properties (from individual services)
-Integrating Microservices with Spring Cloud Config Server
-Refreshing configuration without restarting microservices
-Dynamic routing using Netflix Zuul
-Client Side Load Balancing using Netflix Ribbon
+Externalized Configuration  
+Reading configuration from application.properties (from GIT)  
+Reading configuration from application.properties (from individual services)  
+Integrating Microservices with Spring Cloud Config Server  
+Refreshing configuration without restarting microservices  
+Dynamic routing using Netflix Zuul  
+Client Side Load Balancing using Netflix Ribbon  
 
 # Part 2
 
