@@ -37,7 +37,7 @@ The only thing to make this into config server is to add this in pom:
 
 `run this:`
 
-EurekaServer - http://localhost:8761/
+EurekaServer - http://localhost:8761/  
 ConfigServer - http://localhost:8888/
 
 Then run Payment and Order service `GLOBAL` url (without running the app)
@@ -179,7 +179,8 @@ Netflix Ribbon is a Part of Netflix Open Source Software (Netflix OSS). It is a 
 
 `Running multiple instance of the same service`
 
-    run CurrencyService - http://localhost:8004/. This will simply show the port number
+    run CurrencyService - http://localhost:8004/. 
+    This will simply show the port number
 
 if you are using vscode, do this additional steps:
 
