@@ -85,7 +85,7 @@ if u cant connect to config server, try to add this dependency:
 
 b. Currently the welcome-message variable is using the global property file - FutureXSkill. By defining an application.name in local services, we can connect to the specific service in the git url:
 
-spring.application.name=order-service
+spring.application.name=order-service  
 spring.application.name=payment-service
 
 re run both services n run the above url to see the diff response in 'welcome-message':
@@ -137,14 +137,14 @@ Routing is an integral part of a microservice architecture. For example, / may b
 
 `create a gateway service`
 
-    to make a service a gateway service, simply add in pom:
+to make a service a gateway service, simply add in pom:
 
         <dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
 
-    and add this annotion in your main method:
+and add this annotion in your main method:
 
         @EnableDiscoveryClient
         @EnableZuulProxy
@@ -154,11 +154,13 @@ Routing is an integral part of a microservice architecture. For example, / may b
 EurekaServer - http://localhost:8761/  
 OrderService - http://localhost:8001/  
 PaymentService - http://localhost:8002/  
+
 GatewayService to access payment & Order service -   
     http://localhost:8080/payment-service  
     http://localhost:8080/order-service  
 
 you will see that this url give the same result:
+
  GatewayService - http://localhost:8080/payment-service &  
  PaymentService - http://localhost:8002/
 
@@ -198,17 +200,19 @@ if you are using vscode, do this additional steps:
 
 `Setting up load balancer`
 
-    Create a new service to configure it as load balancer. simply just add in pom:
+Create a new service to configure it as load balancer. simply just add in pom:
 
         <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
     
-    Also some configurations in the controller.
+Also some configurations in the controller.
 
-    Make sure theres 3 instance running in Eureka server
+Make sure theres 3 instance running in Eureka server
 
-    Run LoadBalancer service and refresh few times. You will see the port number change
+Run LoadBalancer service and refresh few times. You will see the port number change
 
-        http://localhost:8080/
+    http://localhost:8080/
+
+************** END OF TUTORIAL *****************
