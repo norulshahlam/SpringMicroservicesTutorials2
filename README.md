@@ -1,6 +1,6 @@
 # 2021 edition - Java, Spring Framework, Spring Boot, Spring Cloud, Microservices, IntelliJ, REST, JPA, Maven, Zuul,Ribbon
 
-`Topics covered:`
+`Topics covered:`  
 Externalized Configuration  
 Reading configuration from application.properties (from GIT)  
 Reading configuration from application.properties (from individual services)  
